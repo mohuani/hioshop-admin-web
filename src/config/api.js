@@ -1,4 +1,5 @@
-const rootUrl = 'http://127.0.0.1:8360/admin/';
+// const rootUrl = 'http://127.0.0.1:8360/admin/';
+const rootUrl = 'https://dev-114074-5-1327784775.sh.run.tcloudbase.com/admin/';
 
 const api = {
     rootUrl : rootUrl,
