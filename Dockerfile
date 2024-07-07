@@ -15,11 +15,9 @@ RUN npm install
 # 复制项目文件到工作目录
 COPY . .
 
-# 构建生产环境的静态文件
-RUN npm run build:prod
 
-# 设置环境变量（可选，根据您的需求调整）
-ENV NODE_ENV production
+# 暴露应用可能使用的端口（根据您的应用需要进行调整）
+EXPOSE 9528
 
-# 指定构建输出目录
-CMD ["echo", "Build completed. Use the 'dist' directory for deployment."]
+# 启动应用
+CMD ["npm", "run dev"]
