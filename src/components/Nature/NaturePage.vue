@@ -74,10 +74,19 @@
                 </el-table>
                 <el-table v-if="pIndex == 1" :data="specData" style="width: 100%" border stripe>
                     <el-table-column prop="id" label="ID" width="100">
+                        <template slot-scope="scope">
+                          <div class="bg-gray">{{scope.row.id}}</div>
+                        </template>
                     </el-table-column>
                     <el-table-column prop="name" label="型号名">
+                        <template slot-scope="scope">
+                          <div class="bg-gray">{{scope.row.name}}</div>
+                        </template>
                     </el-table-column>
                     <el-table-column prop="sort_order" label="排序" width="200">
+                        <template slot-scope="scope">
+                          <div class="bg-gray">{{scope.row.sort_order}}</div>
+                        </template>
                     </el-table-column>
                     <el-table-column label="操作" width="160">
                         <template slot-scope="scope">
